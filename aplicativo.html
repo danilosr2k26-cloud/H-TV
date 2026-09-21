@@ -21,7 +21,7 @@ const LINK_DOWNLOAD = "";
 <footer><p></p><a href="https://support.google.com/googleplay/answer/2812853?hl=pt-BR" target="_blank" rel="noopener noreferrer">Google Play Protect ↗</a><a href="https://support.google.com/android/answer/12623953?hl=pt-BR" target="_blank" rel="noopener noreferrer">Permissões e Acessibilidade ↗</a></footer>
 <script>
 const button = document.getElementById('download-button');
-let configured = false;
+let configured = true;
 try {
  const url = new URL(LINK_DOWNLOAD);
  if (url.protocol === 'https:') { button.href = url.href; configured = true; }
